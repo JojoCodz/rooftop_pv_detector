@@ -82,6 +82,5 @@ if __name__ == "__main__":
     INPUT_XLSX = "sites.xlsx"
     OUTPUT_DIR = "outputs/"
     MODEL_PATH = "models/best.pt"  # Your trained YOLO model
-    GOOGLE_API_KEY = "AIzaSyD5n6KHu25uomfJl0dJyzq33IMGSPumQfI"  # Get free tier
     
-    main(INPUT_XLSX, OUTPUT_DIR, MODEL_PATH, GOOGLE_API_KEY)
+    main(INPUT_XLSX, OUTPUT_DIR, MODEL_PATH, api_key=None)
