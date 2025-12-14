@@ -10,8 +10,8 @@ This repository implements a complete, auditable pipeline for rooftop solar PV d
   - Johann Moses Samuel Sam Guna Singh – Data & Pipeline
   - Karthikeyan M – CV & Modeling
   - Aruneshwar R – Model Training, Evaluation & Documentation
-- **Contact email:** johannmosessamuelsamgunasingh.2024.eee@rajalakshmi.edu.in
-                     aruneshwar.r.2024.eee@rajalakshmi.edu.in
+- **Contact email:** johannmosessamuelsamgunasingh.2024.eee@rajalakshmi.edu.in,
+                     aruneshwar.r.2024.eee@rajalakshmi.edu.in,
                      karthikeyan.m.2024.ece@rajalakshmi.edu.in
 
 ---
