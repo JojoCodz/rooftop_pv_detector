@@ -1,7 +1,17 @@
 text
 # Rooftop PV Detector – EcoInnovators Ideathon 2026
 
-This repository implements a complete, auditable pipeline for rooftop solar PV detection for the **EcoInnovators Ideathon 2026** challenge. It takes a `.xlsx` file of sites with latitude/longitude, fetches recent rooftop imagery from **ESRI World Imagery**, runs a trained YOLO model, and produces JSON outputs and visual artifacts per site. [file:669]
+This repository implements a complete, auditable pipeline for rooftop solar PV detection for the **EcoInnovators Ideathon 2026** challenge. It takes a `.xlsx` file of sites with latitude/longitude, fetches recent rooftop imagery from **ESRI World Imagery**, runs a trained YOLO model, and produces JSON outputs and visual artifacts per site.
+
+## Team:
+
+- **Team name:** APXGP
+- **Members:**
+  - Johann Moses Samuel Sam Guna Singh – Data & Pipeline
+  - Karthikeyan M – CV & Modeling
+  - Aruneshwar R – Model Training, Evaluation & Documentation
+- **Contact email:** johannmosessamuelsamgunasingh.2024.eee@rajalakshmi.edu.in
+
 
 ---
 
