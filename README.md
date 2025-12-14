@@ -211,10 +211,10 @@ is created at the repo root or in `outputs/`, containing model outputs for each 
 
 - Load `models/best.pt`  
 - Run inference on all training images  
-- Save detection overlays into an `artefacts/` (or `artifacts/`) folder, for example:
+- Save detection overlays into an `artefacts/`
+- Google Drive link for Artefacts (for trained model): https://drive.google.com/drive/folders/1OZHe4hru94SxAsEGVZ4mN_cjCWEq2LUd?usp=sharing
 
-artefacts/train/<image_name>_overlay.png
-
+  
 ### 6.3 Training logs
 
 From the YOLO run directory, copy:
