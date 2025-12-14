@@ -1,0 +1,6 @@
+train: combined_dataset/train/images
+val: combined_dataset/valid/images
+test: combined_dataset/test/images
+
+nc: 1
+names: ['Solarpanel']

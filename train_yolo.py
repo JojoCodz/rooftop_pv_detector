@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # 1) Load a small pretrained model
-model = YOLO("runs/detect/train5/weights/last.pt")  # or yolov8n.pt you downloaded
+model = YOLO("")  # or yolov8n.pt you downloaded
 
 # 2) Train on your Roboflow dataset
 model.train(
