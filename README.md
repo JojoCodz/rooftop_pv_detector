@@ -7,7 +7,6 @@ This repository implements a complete, auditable pipeline for rooftop solar PV d
 
 ## 1. Project Structure
 ```
-undefined
 
 ROOFTOP_PV_DETECTOR/
 ├── buffer/
@@ -30,7 +29,6 @@ ROOFTOP_PV_DETECTOR/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
-undefined
 ```
 ## 2. Environment Setup
 
@@ -78,7 +76,7 @@ sample_id,latitude,longitude
 ### 3.2 Output JSON format (per site)
 
 For each site, the pipeline creates a JSON file in `outputs/`:
-
+```
 {
 "sampleid": 1001,
 "lat": 37.4222472,
@@ -96,7 +94,7 @@ For each site, the pipeline creates a JSON file in `outputs/`:
 "img_size": 512
 }
 }
-
+```
 A combined `all_predictions.json` is also written to `outputs/`. [file:669]
 
 ### 3.3 Visual artifacts
