@@ -5,7 +5,7 @@ This repository implements a complete, auditable pipeline for rooftop solar PV d
 
 ## Team:
 
-- **Team name:** APXGP
+- **Team name:** APX-GP
 - **Members:**
   - Johann Moses Samuel Sam Guna Singh – Data & Pipeline
   - Karthikeyan M – CV & Modeling
