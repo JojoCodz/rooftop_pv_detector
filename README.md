@@ -14,6 +14,8 @@ This repository implements a complete, auditable pipeline for rooftop solar PV d
                      aruneshwar.r.2024.eee@rajalakshmi.edu.in,
                      karthikeyan.m.2024.ece@rajalakshmi.edu.in
 
+**This repository was created in 2026 for the EcoInnovators Ideathon 2026 – AI-powered Rooftop PV Detection challenge.**
+
 ---
 
 ## 1. Project Structure
