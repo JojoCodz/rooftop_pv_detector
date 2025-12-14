@@ -1,0 +1,24 @@
+[
+  {
+    "sampleid": 1001,
+    "lat": 37.4222472,
+    "lon": -122.0851754,
+    "hassolar": false,
+    "confidence": 0.0,
+    "pvareasqmest": 0.0,
+    "bufferradiussqft": 1200,
+    "qcstatus": "NOT_VERIFIABLE",
+    "bboxormask": "[]",
+    "imagemetadata": {
+      "source": "ESRI World Imagery",
+      "zoom": 17,
+      "tile_coords": [
+        21086,
+        50824
+      ],
+      "lat": 37.4222472,
+      "lon": -122.0851754,
+      "img_size": 512
+    }
+  }
+]
