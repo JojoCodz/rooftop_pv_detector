@@ -6,6 +6,8 @@ This repository implements a complete, auditable pipeline for rooftop solar PV d
 ---
 
 ## 1. Project Structure
+```
+undefined
 
 ROOFTOP_PV_DETECTOR/
 ├── buffer/
@@ -28,10 +30,8 @@ ROOFTOP_PV_DETECTOR/
 ├── requirements.txt # Python dependencies
 └── README.md # This file
 
-text
-
----
-
+undefined
+```
 ## 2. Environment Setup
 
 ### 2.1 Python version
@@ -48,17 +48,11 @@ Windows
 Linux/Mac
 source .venv/bin/activate
 
-text
-
 ### 2.2 Install dependencies
 
 pip install -r requirements.txt
 
-text
-
 This installs `ultralytics`, `torch`, `pandas`, `opencv-python`, `numpy`, and other utilities required for the pipeline. [file:669]
-
----
 
 ## 3. Inputs and Expected Outputs
 
@@ -67,8 +61,6 @@ This installs `ultralytics`, `torch`, `pandas`, `opencv-python`, `numpy`, and ot
 Place your input file at:
 
 inputs/sites.xlsx
-
-text
 
 Required columns in `sites.xlsx`:
 
@@ -80,8 +72,6 @@ Example row:
 
 sample_id,latitude,longitude
 1001,37.4222472,-122.0851754
-
-text
 
 [file:669]
 
@@ -107,8 +97,6 @@ For each site, the pipeline creates a JSON file in `outputs/`:
 }
 }
 
-text
-
 A combined `all_predictions.json` is also written to `outputs/`. [file:669]
 
 ### 3.3 Visual artifacts
@@ -129,8 +117,6 @@ For each site, the pipeline produces:
 
 models/best.pt
 
-text
-
 These weights are typically obtained from `train_yolo.py` or a Colab run. [file:669]
 
 ### 4.2 Run pipeline from project root
@@ -139,8 +125,6 @@ From the repository root (`ROOFTOP_PV_DETECTOR/`), run:
 
 python -m pipeline_codes.main
 
-text
-
 By default, `pipeline_codes/main.py` uses:
 
 INPUT_XLSX = "inputs/sites.xlsx"
@@ -148,8 +132,6 @@ OUTPUT_DIR = "outputs/"
 MODEL_PATH = "models/best.pt"
 
 main(INPUT_XLSX, OUTPUT_DIR, MODEL_PATH, api_key=None)
-
-text
 
 For each row in `sites.xlsx`, this will:
 
@@ -169,7 +151,6 @@ The YAML config for training lives at:
 
 data/rooftop_pv.yaml
 
-text
 
 It specifies train/val image directories and class definitions (`solar_panel`). [file:669]
 
@@ -178,8 +159,6 @@ It specifies train/val image directories and class definitions (`solar_panel`). 
 To train YOLO on the rooftop PV dataset:
 
 python train_yolo.py
-
-text
 
 A typical `train_yolo.py` contents:
 
@@ -195,13 +174,9 @@ device="cpu", # or "0" if you have a GPU
 save_period=5 # save checkpoints every 5 epochs
 )
 
-text
-
 Training outputs (including `best.pt`, `last.pt`, `results.csv`) will appear under:
 
 runs/detect/train/
-
-text
 
 [web:558][file:669]
 
@@ -217,8 +192,6 @@ After training, generate predictions for all training images (e.g. via `test_mod
 
 predictions_training_dataset.json
 
-text
-
 is created at the repo root or in `outputs/`, containing model outputs for each training image.
 
 ### 6.2 Artifacts (training set)
@@ -231,21 +204,15 @@ is created at the repo root or in `outputs/`, containing model outputs for each 
 
 artefacts/train/<image_name>_overlay.png
 
-text
-
 ### 6.3 Training logs
 
 From the YOLO run directory, copy:
 
 runs/detect/train/results.csv
 
-text
-
 to:
 
 training_logs.csv
-
-text
 
 This CSV contains loss, precision, recall, and mAP across epochs, satisfying the model‑training‑logs requirement. [web:558][file:669]
 
@@ -303,8 +270,6 @@ python -m venv .venv
 .venv\Scripts\activate # Windows
 pip install -r requirements.txt
 
-text
-
 3. Ensure:
 - `inputs/sites.xlsx` is present with correct columns.  
 - `models/best.pt` exists (trained model).  
@@ -312,7 +277,5 @@ text
 4. Run the inference pipeline:
 
 python -m pipeline_codes.main
-
-text
 
 5. Inspect outputs in `outputs/` and overlays in `outputs/overlays/`.
